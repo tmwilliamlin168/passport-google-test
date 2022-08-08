@@ -14,6 +14,6 @@ if (
 
 export const { BASE_URL, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET } = process.env;
 
-export const PORT = BASE_URL.split(':')[2] || 80;
-
 export const COOKIE_KEYS = JSON.parse(process.env.COOKIE_KEYS);
+
+export const PORT = +(process.env.PORT || 3000);
